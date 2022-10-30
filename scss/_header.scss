@@ -1,0 +1,65 @@
+// main-nav
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+    &__logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    &__items {
+        display: flex;  //üstteki linkler yan yana geldi
+
+        li {
+            padding: 1rem 1.5rem;
+
+            a {
+                text-decoration: none;  //linklerin alt çizgileri gider
+                color: #fff;
+                text-transform: uppercase;  //hepsi büyük harf
+                border-bottom: 3px transparent solid;  //önce yer kaplasın ama görünmesin hover,active olduğunda görünür
+                padding-bottom: .5rem;
+                transition: border-color .5s;
+
+                &:hover {  //a etiketinin üstüne gelince
+                    border-color: $medium-color;
+                }
+
+                &.active {  //active clasına sahipse sol üstteki linklerden birinin kenarlık rengi değişik olur
+                    border-color: $primary-color;
+                }
+            }
+        } 
+    }
+}
+
+#header {
+    &__home {  //header__home sınıfına ulaşır. İndex.html deki header kısmı
+        background: $bg-image no-repeat center right/cover;
+        height: 100vh;
+        color: #fff;
+
+        //header__home altındaki header-content
+        .header-content {
+            text-align: center;
+            padding-top: 30%;
+        }
+
+        h1 {
+            font-size: 4rem;
+            line-height: 1.2;
+        }
+        //daktilo efektli yazı
+        .typewrite {
+            display: block;
+        }
+    }
+
+    &__inner {  //iç sayfalardaki(about vs) header kısmı
+        background: $bg-image no-repeat 40% 20% / cover;  //center yerine %40 konumlandırmayı kullandık    
+        height: 5.5rem;
+        border-bottom: 3px solid $primary-color;  //header kısmının altına çizgi çekti
+    }
+}

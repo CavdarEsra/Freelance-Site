@@ -1,0 +1,74 @@
+#about {
+    &-a {
+        .info {   //about-a idsi altındaki info claslı div özellikleri
+            display: grid;
+            grid-template-columns: 1fr 2fr;  //satırı 1e 2 oranında böler. Bi tarafına resim bi tarafına yazı
+            gap: 1.2rem;
+
+            &__image {  //sol taraf
+                border: 1px solid $light-color;
+                padding: .5rem;
+                border-radius: 3px;
+            }
+
+            &__bio {  //sağ taraf 
+                border: 1px solid $light-color;
+                padding: .8rem;
+            }
+        }
+    }
+
+    &-b {
+        color: #fff;
+
+        .progress {  //çubuğun tamamı
+            height: 20px;
+            background-color: $medium-color;
+            border-radius: 5px;
+            margin-bottom: .8rem;
+
+            div {  //çubuğun % ile belirtilen yere kadar olan stili
+                height: 100%;
+                text-align: center;
+                background-color: $primary-color;
+            }            
+        }
+    }
+
+    &-c {
+        .about-logos {
+            display: grid;  //yan yana 4 sütunda 
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            align-items: center;
+
+            img {
+                width: 70%;
+            }
+        }
+    }
+
+    &-d {
+        .references {
+            ul {  
+                list-style: none;
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+            }
+
+            p {
+                border: 1px solid $medium-color;
+                border-radius: 5px;
+                padding: .5rem;
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                padding-right: .5rem;
+            }
+        }
+    }
+}
