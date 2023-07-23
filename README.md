@@ -1,7 +1,8 @@
 # Freelance Website 
 ## Used Technologies 
 * HTML 
-* CSS 
+* SCSS
+* JAVASCRIPT
 ### Screenshot Of Website 
 ![Ekran resmi1](https://github.com/CavdarEsra/Hotel-Site/blob/main/Hotel1.png)
 ![Ekran resmi2](https://github.com/CavdarEsra/Hotel-Site/blob/main/Hotel2.png)
